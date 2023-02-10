@@ -1,44 +1,99 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
 body {
-	margin: 0;
 	font-family: 'Open Sans', sans-serif;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	background: url(./images/bg.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: bottom;
+	height: 100vh;
+	@apply text-sm;
 }
 
-code {
-	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-		monospace;
+.root {
+	height: 100%;
 }
 
-.txtBox {
-	@apply placeholder:italic placeholder:text-slate-400 block bg-white border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm;
+.mainBody {
+	height: 86vh;
 }
 
-.btn {
-	@apply bg-slate-300 py-2 px-4 my-4 rounded-full hover:bg-sky-500 hover:border-slate-300 transition-all duration-500;
+nav {
+	@apply bg-sky-600 text-white flex items-center h-[8vh];
 }
 
-.cardContainer {
-	@apply grid grid-flow-row gap-8 overflow-x-hidden pl-8 h-full box-border flex-none;
+.logo {
+	@apply flex-1 h-full items-center;
 }
 
-.cardContainer::-webkit-scrollbar {
-	display: none;
+.home {
+	@apply w-[220px] flex items-center justify-center hover:bg-sky-400 h-full cursor-pointer;
 }
 
-.card {
-	@apply px-4 py-4 border-none align-middle justify-center w-48 text-center text-white bg-slate-800 bg-opacity-50 rounded-3xl;
+.home a {
+	@apply text-2xl font-black;
 }
 
-h2 {
-	@apply text-6xl font-black;
+.navs {
+	@apply flex w-[450px] h-full;
+}
+
+.navLinks {
+	@apply flex-1 flex justify-center;
+}
+
+.navLinks div {
+	@apply h-full hover:bg-sky-500 flex items-center px-4;
+}
+
+.cart {
+	@apply hover:bg-sky-500 flex items-center px-4;
+}
+
+.sideNav {
+	@apply flex-none h-full w-[220px] bg-slate-100 px-8 py-12 text-black;
+}
+
+.category {
+	@apply mb-2;
+}
+
+.products {
+	@apply grow flex flex-col text-center h-full overflow-y-scroll pb-8;
+}
+
+.cartItems {
+	@apply flex gap-4 h-16 text-sm  border-slate-400 border border-t-0 border-x-0 bg-slate-200;
+}
+
+.select {
+	@apply w-14 h-full flex items-center justify-center;
+}
+
+.product {
+	@apply flex-1 flex items-center font-semibold;
+}
+
+.unitPrice {
+	@apply w-24 h-full flex items-center justify-between px-4 font-semibold;
+}
+
+.quantity {
+	@apply w-32 h-full flex gap-2 items-center justify-center px-4;
+}
+
+.quantity button {
+	@apply bg-sky-500 w-full rounded-full hover:bg-sky-300 font-bold text-white;
+}
+
+.total {
+	@apply w-24 h-full flex items-center justify-between px-4 font-semibold;
+}
+
+.remove {
+	@apply w-20 h-full flex items-center justify-center px-3;
+}
+
+.remove button {
+	@apply bg-sky-500 w-full rounded-full hover:bg-sky-300 text-xs;
 }
