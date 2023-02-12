@@ -16,12 +16,8 @@ import About from './pages/About';
 import Programs from './pages/Programs';
 import DepartmentPage from './pages/DeparmentPage';
 
-function App(props) {
+function App() {
 	const [colleges, setColleges] = useState(Colleges);
-
-	useEffect(() => {
-		console.log(window);
-	}, []);
 
 	return (
 		<React.Fragment>
@@ -69,15 +65,15 @@ function App(props) {
 							element={<Programs colleges={colleges} />}
 						/>
 						<Route path="/about" element={<About />} />
-						{Colleges.map((val, key) => {
-							val.departments.map((data) => {
-								return (
-									<Route
-										path={`/${data.url}`}
-										element={<DepartmentPage />}
-									/>
-								);
-							});
+
+						{colleges.map((data) => {
+							return data.departments.map((val) => (
+								<Route
+									key={data.id}
+									path={val.url}
+									element={<DepartmentPage data={val} />}
+								/>
+							));
 						})}
 
 						<Route path="*" element={<ErrorPage />} />

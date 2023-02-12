@@ -2,9 +2,6 @@ import React, { useState, useEffect } from 'react';
 
 function Departments(props) {
 	const data = props.data;
-	useEffect(() => {
-		console.log(data);
-	}, []);
 
 	const renderLink = () => {
 		if (data.url != '') {

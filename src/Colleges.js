@@ -67,7 +67,7 @@ const Colleges = [
 				name: 'BSCE',
 				title: 'Bachelor of Science in Civil Engineering',
 				desc: 'The Bachelor of Science in Civil Engineering is intended to provide graduates with the skills and knowledge needed to design, build, and operate engineered systems such as roads, foundations, buildings, bridges, dams, airports, and water supply and wastewater treatment systems.',
-				url: '',
+				url: 'shs',
 			},
 			{
 				name: 'BSEE',
