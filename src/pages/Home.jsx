@@ -1,9 +1,15 @@
+import React, { useState, useEffect } from 'react';
+
 function Home() {
-  return (
-    <div className="flex justify-center items-center h-[86vh] text-9xl">
-      <h1>Sample Home Page</h1>
-    </div>
-  );
+	useEffect(() => {
+		document.title =
+			'Philippine Engineering and Agro-Industrial College, Inc.';
+	}, []);
+	return (
+		<div>
+			<h1>Home</h1>
+		</div>
+	);
 }
 
 export default Home;

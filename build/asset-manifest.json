@@ -1,18 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.3cf9fea6.css",
-    "main.js": "/static/js/main.8e5f2157.js",
-    "static/media/r3-3100.jpg": "/static/media/r3-3100.b506f297a399a43fff2d.jpg",
-    "static/media/msih410ma.jpg": "/static/media/msih410ma.7d30c82b556991a36b8a.jpg",
-    "static/media/elitePlus2x.jpg": "/static/media/elitePlus2x.05acce771480dde9e8e9.jpg",
-    "static/media/i3-10100.jpg": "/static/media/i3-10100.14f09812b773ac4ec28e.jpg",
-    "static/media/AsusPrimeH410.jpg": "/static/media/AsusPrimeH410.31d9d8a6004803b90427.jpg",
+    "main.css": "/static/css/main.7011e4ae.css",
+    "main.js": "/static/js/main.b48d59e3.js",
+    "static/media/logo.png": "/static/media/logo.544ef545943996bd0934.png",
+    "static/media/qalam.jpg": "/static/media/qalam.f7217dda0e6dfde6e0e8.jpg",
+    "static/media/cite.png": "/static/media/cite.930489609fdb7be376cb.png",
     "index.html": "/index.html",
-    "main.3cf9fea6.css.map": "/static/css/main.3cf9fea6.css.map",
-    "main.8e5f2157.js.map": "/static/js/main.8e5f2157.js.map"
+    "main.7011e4ae.css.map": "/static/css/main.7011e4ae.css.map",
+    "main.b48d59e3.js.map": "/static/js/main.b48d59e3.js.map"
   },
   "entrypoints": [
-    "static/css/main.3cf9fea6.css",
-    "static/js/main.8e5f2157.js"
+    "static/css/main.7011e4ae.css",
+    "static/js/main.b48d59e3.js"
   ]
 }
